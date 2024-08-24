@@ -1,0 +1,139 @@
+#about{
+    position: relative;
+    height: auto;
+    min-height: 100dvh;
+    width: 100dvw;
+
+    background: white !important;
+}
+#about main{
+    height: 100vh;
+    width: 100dvw;
+    background: url('https://s3-alpha-sig.figma.com/img/5ddf/09fc/43b5daf77fa79e908f9339c601517d93?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HtSVdCXmFWPBUSzgSmZFrGWl3bMVygz8-O1NPBL0upAe~Y8z9tYIOZBrcuYYGcXwdwj9~jORIQjSDcl5rpa3kKN5ZILk1dhGpVOJUbuKyYxWaVHu2sHslcL7Loz4gW5TXICkMaGbAx7ShAPXTsJqKZ75Xp5ljqMjCFqb9QnI9FxWBZXwJfjhlrxJWNwZ9mnKu7yuOL0H3B0Y5K8aYh3bGnPP-C9d~c~5ZKYic1JDaVLzyuWEni4xJ-rnAfO9c5YiSJ3YtKJJr7476a0U6xP9JHLLSpJ7CBIv6d6efuj3h8QL0C3amcldLGsbPsDCgNkdDWNEHjsdtjjyeI6491iU3g__');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+header{
+    position: absolute;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    background: white;
+}
+.hero-tx{
+    /* position: relative; */
+    /* bottom: 50px;
+    left: 50px; */
+    /* border: 5px solid red; */
+    align-self: flex-end;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    font-size: 6rem;
+    color: white;
+    
+    text-shadow: 0px 1px 5px  rgba(1, 1, 1, 0.13) !important;
+}#ab-2{
+    position: relative;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    min-height: 100dvh;
+    /* display: flex; */
+    flex-direction: column;
+    /* background: #E7E8E7; */
+    box-shadow: 0 0 150px 15px rgba(22, 134, 22, 0.903);
+}
+.ab-data .t-title{
+    font-size: 3rem;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.ab-data p{
+    font-size: 1rem;
+    width: 70%;
+    letter-spacing: 1px;
+}
+.ab-data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid red; */
+    height: fit-content !important;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    padding: 10vh 7.5vw;
+    justify-content: center;
+}
+#miss{
+    display: flex;
+    min-height: 70vh;
+}
+.ms-img img{
+    /* border: 4px solid red; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ms-img{
+    flex: 1;
+    width: 50%;
+/* background: rgb(237, 126, 126); */
+
+
+}
+.ms-dt  p{
+    text-shadow: 0px 1px 5px  rgba(1, 1, 1, 0.099) !important;
+    line-height: 25px !important;
+    font-size: 1.2rem;
+
+}
+.ms-dt .t-title{
+    font-size: 2.5rem;
+    border-bottom: 2.5px solid white;
+    padding: 3px;
+    text-shadow: 0px 1px 5px  rgba(1, 1, 1, 0.099) !important;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+.ms-dt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15vh 50px;
+    width: 50%;
+    /* background: #90D549; */
+    background: #77c268;
+    color: white;
+    align-items: center;
+    text-align: center;
+      background: linear-gradient(317deg,deepskyblue,#62dd59);
+  background-size: 120% 120%;
+  animation: gradient-animation 5s ease infinite;
+    /* height: ; */
+}
+body{
+    width: 100vw;
+    /* overflow-x: hidden !important; */
+}
+.chain canvas{
+    /* height: 200% !important; */
+    /* width: 200% !important; */
+}
+.chain{
+    width: 100%;
+    /* border: 5px solid red; */
+    /* height: 50vh; */
+    display: grid;
+    place-items: center;
+    margin-top: -30vh;
+}
+#miss{
+    height: 70vh;
+    margin-top: -20vh;
+}

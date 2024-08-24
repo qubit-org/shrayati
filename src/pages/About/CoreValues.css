@@ -1,0 +1,55 @@
+#core-ol {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 5vw;
+  gap: 45px;
+}
+
+#core-ol * {
+  /* Optional: For debugging borders, uncomment these lines */
+  /* border: 5px solid blue; */
+}
+
+.cr-tp h1 {
+  font-size: 4rem !important;
+  font-weight: 600;
+  text-decoration: underline;
+  padding-bottom: 5px;
+  display: grid;
+  place-items: center;
+}
+
+.cr-grd {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.cr-cd {
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 17.5px;
+  width: 25%;
+  padding: 22px 17px;
+  cursor: grab;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.166);
+}
+
+.cr-img img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.cr-ttl {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.gp-ad{
+  /* border: 5px solid red; */
+  padding: 25px;
+  /* width: 80%; */
+  /* margin: 25px; */
+}
