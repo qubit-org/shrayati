@@ -27,6 +27,7 @@ footer{
 .lgg img{
     width: 100px;
 }
+/* .cc-ifo > { */
 .cc-ifo{
     display: flex;
     justify-content: center;
@@ -37,6 +38,7 @@ footer{
 .cc-ifo p{
     display: flex;
     align-items: center;
+    gap: 7px;
     font-size: 0.9rem;
 }
 .ftr-r a{
@@ -44,6 +46,7 @@ footer{
     font-size: 1rem;
     color: #252525;
     text-decoration: none;
+    text-transform: capitalize;
 }
 .ftr-r h1{
     margin-bottom: 25px;
@@ -60,4 +63,61 @@ footer{
     /* width: 100%; */
     display: flex;
 
+}
+.pr-grd{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 10vh 0;
+
+}
+.pr-grd > *{
+    width: 33%;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.166);
+    border-radius: 13px;
+    overflow: hidden;
+    
+    
+}.pr-tp-oll{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.196);
+    
+}
+.pr-tp-oll img{
+    
+    width: 105%;
+}
+.pr-bott{
+    padding:35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.pr-ft{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.grn{
+color:rgb(52, 198, 52);
+font-weight: 600;
+}
+.lrg-btn{
+    width: 100%;
+    padding: 9px 25px;
+    background: transparent;
+    font-size: 1.15rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+#comp-4{
+    padding: 10vh 5vw;
 }

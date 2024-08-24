@@ -4,6 +4,7 @@ import { gsap } from "gsap"; // Import GSAP for scaling
 import "./App.css"; // Import the CSS for styling
 import About from "./pages/About/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Compney from "./pages/Compney/Compney";
 
 const App = () => {
   // useEffect(() => {
@@ -62,6 +63,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/info" element={<Compney />} />
       </Routes>
       {/* <div id="mc" className="circle"></div> */}
     </Router>

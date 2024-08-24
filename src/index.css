@@ -967,3 +967,16 @@ body {
     overflow: scroll !important;
   }
 }
+.transpatent-back{
+  /* background: red; */
+  /* border: 5px solid red; */
+  mix-blend-mode:multiply !important;
+}
+.carousel .list .item img{
+  mix-blend-mode:multiply !important;
+
+}
+body{
+  width: 100dvw;
+  overflow-x: hidden;
+}

@@ -5,7 +5,7 @@ const Story = () => {
    <div id="story-ol">
     <center>
         <h1>
-            Out Story
+            Our Story
         </h1>
         <div className="st-info">
             <p>

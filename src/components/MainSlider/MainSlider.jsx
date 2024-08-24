@@ -1,21 +1,24 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 // import './style.css';
+const truncateText = (text, maxLength = 200) => {
+    return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
+};
 
 const ProductItem = ({ product }) => {
     return (
         <div className="item">
-            <img src={product.image} alt={product.topic} />
+            <img src={product.image} alt={product.topic} className='transpatent-back' />
             <div className="introduce">
                 <div className="title">DESIGN SLIDER</div>
                 <div className="topic">{product.topic}</div>
-                <div className="des">{product.introduction}</div>
-                <button className="seeMore">SEE MORE</button>
+                 <div className="des">{truncateText(product.introduction)}</div>
+               <button className="seeMore">SEE MORE</button>
             </div>
             <div className="detail">
                 <div className="title">{product.title}</div>
-                <div className="des">{product.description}</div>
-                <div className="specifications">
+               <div className="des">{truncateText(product.description)}</div>
+                 <div className="specifications">
                     {product.specifications.map((spec, index) => (
                         <div key={index}>
                             <p>{spec.label}</p>
@@ -65,7 +68,7 @@ const MainSlider = ({ products }) => {
             unAcceppClick = setTimeout(() => {
                 nextButton.style.pointerEvents = 'auto';
                 prevButton.style.pointerEvents = 'auto';
-            }, 2000);
+            }, 1000);
         };
 
         nextButton.onclick = () => {
