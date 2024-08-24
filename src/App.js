@@ -5,6 +5,7 @@ import "./App.css"; // Import the CSS for styling
 import About from "./pages/About/About";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Compney from "./pages/Compney/Compney";
+import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   // useEffect(() => {
@@ -64,6 +65,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/info" element={<Compney />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <div id="mc" className="circle"></div> */}
     </Router>

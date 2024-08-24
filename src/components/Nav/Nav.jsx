@@ -17,7 +17,7 @@ export const Nav = () => {
         <Link to="/info">
           <span>Info</span>
         </Link>
-        <Link>
+        <Link to="/contact">
           <span>Contact</span>
         </Link>
       </nav>
