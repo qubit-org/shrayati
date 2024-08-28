@@ -1,3 +1,11 @@
+.contact-whole-page-parent{
+/* background: rgb(194, 251, 194) !important;    
+ */
+ 
+    background: linear-gradient(317deg,rgb(94, 201, 237),#c7f0c5,#eee) !important;
+    background-size: 110% 110% !important;
+    animation: gradient-animation 2s ease infinite !important;
+}
 #contact-sec-ol{
     display: flex;
     /* border: 5px solid red; */
@@ -5,7 +13,11 @@
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.226);
     border-radius: 13px;
     overflow: hidden;
-    margin-top: 15vh;
+    margin-top: 17vh;
+    /* background: lime; */
+}
+footer{
+    background: #fff;
 }
 .cs-l{
     display: flex;
@@ -102,6 +114,7 @@
 .cs-r{
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.255);
     padding: 45px;
+    background: #fff;
     width: 65%;
 }
 .cs-r form{

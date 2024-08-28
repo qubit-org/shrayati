@@ -11,7 +11,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contact = () => {
   return (
-    <div id='comp-oll'>
+    <div id='comp-oll' className='contact-whole-page-parent'>
       <Nav/>
       <section id='contact-sec-ol'>
        <div className="cs-l">

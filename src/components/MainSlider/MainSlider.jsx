@@ -1,24 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-// import './style.css';
+// import './style.css'; // Ensure you have CSS for your slider styles
+
 const truncateText = (text, maxLength = 200) => {
     return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
 };
 
-const ProductItem = ({ product }) => {
+const ProductItem = React.memo(({ product }) => {
     return (
         <div className="item">
-            <img src={product.image} alt={product.topic} className='transpatent-back' />
+            <img src={product.image} alt={product.topic} className='transparent-back' />
             <div className="introduce">
                 <div className="title">DESIGN SLIDER</div>
                 <div className="topic">{product.topic}</div>
-                 <div className="des">{truncateText(product.introduction)}</div>
-               <button className="seeMore">SEE MORE</button>
+                <div className="des">{truncateText(product.introduction)}</div>
+                <button className="seeMore">SEE MORE</button>
             </div>
             <div className="detail">
                 <div className="title">{product.title}</div>
-               <div className="des">{truncateText(product.description)}</div>
-                 <div className="specifications">
+                <div className="des">{truncateText(product.description)}</div>
+                <div className="specifications">
                     {product.specifications.map((spec, index) => (
                         <div key={index}>
                             <p>{spec.label}</p>
@@ -33,6 +34,22 @@ const ProductItem = ({ product }) => {
             </div>
         </div>
     );
+});
+
+ProductItem.propTypes = {
+    product: PropTypes.shape({
+        image: PropTypes.string.isRequired,
+        topic: PropTypes.string.isRequired,
+        introduction: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        specifications: PropTypes.arrayOf(
+            PropTypes.shape({
+                label: PropTypes.string.isRequired,
+                value: PropTypes.string.isRequired,
+            })
+        ).isRequired,
+    }).isRequired,
 };
 
 const MainSlider = ({ products }) => {
@@ -49,14 +66,12 @@ const MainSlider = ({ products }) => {
         const listHTML = listHTMLRef.current;
         const backButton = backButtonRef.current;
 
-        let unAcceppClick;
-
         const showSlider = (type) => {
             nextButton.style.pointerEvents = 'none';
             prevButton.style.pointerEvents = 'none';
 
             carousel.classList.remove('next', 'prev');
-            let items = document.querySelectorAll('.carousel .list .item');
+            let items = listHTML.children;
             if (type === 'next') {
                 listHTML.appendChild(items[0]);
                 carousel.classList.add('next');
@@ -64,32 +79,33 @@ const MainSlider = ({ products }) => {
                 listHTML.prepend(items[items.length - 1]);
                 carousel.classList.add('prev');
             }
-            clearTimeout(unAcceppClick);
-            unAcceppClick = setTimeout(() => {
+            setTimeout(() => {
                 nextButton.style.pointerEvents = 'auto';
                 prevButton.style.pointerEvents = 'auto';
             }, 1000);
         };
 
-        nextButton.onclick = () => {
-            showSlider('next');
-        };
+        const handleClickNext = () => showSlider('next');
+        const handleClickPrev = () => showSlider('prev');
+        const handleClickSeeMore = () => carousel.classList.add('showDetail');
+        const handleClickBack = () => carousel.classList.remove('showDetail');
 
-        prevButton.onclick = () => {
-            showSlider('prev');
-        };
+        nextButton.addEventListener('click', handleClickNext);
+        prevButton.addEventListener('click', handleClickPrev);
+        backButton.addEventListener('click', handleClickBack);
 
-        // Select the seeMore buttons after the component has mounted
         const seeMoreButtons = document.querySelectorAll('.seeMore');
-        seeMoreButtons.forEach((button) => {
-            button.onclick = () => {
-                carousel.classList.remove('next', 'prev');
-                carousel.classList.add('showDetail');
-            };
-        });
+        seeMoreButtons.forEach((button) =>
+            button.addEventListener('click', handleClickSeeMore)
+        );
 
-        backButton.onclick = () => {
-            carousel.classList.remove('showDetail');
+        return () => {
+            nextButton.removeEventListener('click', handleClickNext);
+            prevButton.removeEventListener('click', handleClickPrev);
+            backButton.removeEventListener('click', handleClickBack);
+            seeMoreButtons.forEach((button) =>
+                button.removeEventListener('click', handleClickSeeMore)
+            );
         };
     }, []);
 

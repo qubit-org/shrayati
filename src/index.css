@@ -2,6 +2,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: #292929; */
+    /* padding: 5px; */
+    background: #fff;
+    z-index: 111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(297deg, #4ddfdd, #48e658);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(15, 188, 99, 0.31);
+    transition: transform 0.3s ease;
+    animation: thumbPulsate 2s infinite;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transform: scale(1.1);
+}
+
+* {
+    /* scrollbar-width: thin; */
+    /* scrollbar-color: #80f0ee #61f06f; */
+}
+
+@keyframes thumbPulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +57,13 @@
   position: relative; transition: transform 0.3s ease; /* Smooth zoom effect */
   will-change: transform; /* Hint for smoother performance */
 }
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden; /* Prevent default scrollbars */
+}
 
 body {
   margin: 0;
@@ -25,13 +74,14 @@ body {
   background-position:  -200px center ;
   font-family: "Raleway", sans-serif;
   font-family: "Montserrat", sans-serif;
+  overflow-y: auto !important;
   /* cursor: none; */
 }
 #mc{
     
     transition: all cubic-bezier(0.19, 1, 0.22, 1)0.7s;
     position:absolute;
-    z-index: 99999;
+    z-index: 999;
     width: 100px;
     height: 100px;
     background: rgb(28, 48, 27);
@@ -264,9 +314,9 @@ nav a:hover span::after {
 }
 
 .carousel .list .item img {
-  width: 50%;
+  width: 60%;
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 50%;
   transform: translateY(-50%);
   transition: right 1.5s;
@@ -280,7 +330,7 @@ nav a:hover span::after {
 .carousel .list .item:nth-child(2) .introduce {
   opacity: 1;
   pointer-events: auto;
-  width: 450px;
+  width: 50%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -288,7 +338,7 @@ nav a:hover span::after {
 }
 
 .carousel .list .item .introduce .title {
-  font-size: 2.3rem;
+  font-size: 3.3rem;
   font-weight: 500;
   display: none;
   line-height: 1em;
@@ -296,24 +346,25 @@ nav a:hover span::after {
 }
 
 .carousel .list .item .introduce .topic {
-  font-size: 4.5em;
+  font-size: 5rem !important;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 90px;
   margin: 13px 0 !important;
+  /* line-height: ; */
 }
 
 .carousel .list .item .introduce .des {
-  font-size: 1.1rem;
-  padding-top: 15px;
+  font-size: 1.17rem;
+  /* padding-top: 15px; */
   font-weight: 400 !important;
-  color: rgba(47, 46, 46, 0.6);
+  color: rgba(29, 29, 29, 0.6);
   /* font-size: 2rem !important; */
 }
 
 .carousel .list .item .introduce .seeMore {
-  font-family: Poppins;
-  margin-top: 1.2em;
-  padding: 5px 16px;
+ font-family: Poppins;
+  margin-top: 25px;
+  padding: 5px 17px;
   border-radius: 7px;
   border: none;
   border: 1px solid #555;
@@ -322,7 +373,7 @@ nav a:hover span::after {
   letter-spacing: 3px;
   transition: background 0.5s;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400 !important;
 }
 
@@ -637,23 +688,19 @@ nav a:hover span::after {
 }
 
 #back {
-  z-index: 100;
-  /* transform: translateX(-50%); */
+ font-family: Poppins;
+  margin-top: 25px;
+  padding: 5px 17px;
+  border-radius: 7px;
   border: none;
   border: 1px solid #555;
-  /* font-family: Poppins; */
-  font-weight: 400;
-  letter-spacing: 3px;
   background-color: transparent;
-  padding: 5px 16px;
-  border-radius: 7px;
-font-size: 1rem;
-
-  font-family: "Poppins", sans-serif !important;
-  /* font-family: "Montserrat", sans-serif !important; */
-  /* opacity: 0; */
+  font-weight: bold;
+  letter-spacing: 3px;
+  transition: background 0.5s;
   cursor: pointer;
-  transition: opacity 0.5s;
+  font-size: 1.1rem;
+  font-weight: 400 !important;
 }
 
 .carousel.showDetail #back {
