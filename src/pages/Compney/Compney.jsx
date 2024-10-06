@@ -9,15 +9,14 @@ import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
 const Compney = () => {
   return (
     <div id="comp-oll">
-      <Nav />
-      <section>
-        <div id="comp-1">
+      {/* <Nav /> */}
+      <section id="info">
+        {/* <div id="comp-1">
           <h1>
             Investors
-            {/* <br /> */}
             &nbsp; Relations
           </h1>
-        </div>
+        </div> */}
         <div id="comp-2" className="secc">
           <center>
             <h1>Investor’s overview</h1>
@@ -91,8 +90,8 @@ const Compney = () => {
             <div className="pr-cdd">
               <div className="pr-tp-oll">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/2975/cd8d/6fdcda2c806eb74d962ff12010b2ef17?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dYYIX4WGfSgfOFN6QNmiKRxzepOGby0THzzMImmok7JV00tHsOkibXKi38ElbxTcsd-HRv41in0W8Nb144pr4FlRPJz0OwGve1ycwJIKV4VfHmLG3lFeD-OVv4wR02-jnHSsl-x~TZ3QlCsHg3KOJOrK3~ukULZLs6YWP8qRHRvqWS4DqfiY-qmgIA-fL5GRwki-yFP0ljNqc9sGbgKJt9wexsErOOTH3FxEgeA5fAOY-vFBO6Qaz91EwIUkVLSOpztUOrlypFm3bh0ZeM8oIVMSbBYdcgKRUnwoYbRcRjIKdR9qGB-KncmPAXMOlBnIzmEZG7AYxOZDOQvmhG48uA__"
-                  alt=""
+                 src="https://i.imgur.com/91Tt67E.jpeg"
+                 alt=""
                 />
               </div>
               <div className="pr-bott">
@@ -106,8 +105,8 @@ const Compney = () => {
             <div className="pr-cdd">
               <div className="pr-tp-oll">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/2975/cd8d/6fdcda2c806eb74d962ff12010b2ef17?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dYYIX4WGfSgfOFN6QNmiKRxzepOGby0THzzMImmok7JV00tHsOkibXKi38ElbxTcsd-HRv41in0W8Nb144pr4FlRPJz0OwGve1ycwJIKV4VfHmLG3lFeD-OVv4wR02-jnHSsl-x~TZ3QlCsHg3KOJOrK3~ukULZLs6YWP8qRHRvqWS4DqfiY-qmgIA-fL5GRwki-yFP0ljNqc9sGbgKJt9wexsErOOTH3FxEgeA5fAOY-vFBO6Qaz91EwIUkVLSOpztUOrlypFm3bh0ZeM8oIVMSbBYdcgKRUnwoYbRcRjIKdR9qGB-KncmPAXMOlBnIzmEZG7AYxOZDOQvmhG48uA__"
-                  alt=""
+                 src="https://i.imgur.com/91Tt67E.jpeg"
+                 alt=""
                 />
               </div>
               <div className="pr-bott">
@@ -121,8 +120,8 @@ const Compney = () => {
             <div className="pr-cdd">
               <div className="pr-tp-oll">
                 <img
-                  src="https://s3-alpha-sig.figma.com/img/2975/cd8d/6fdcda2c806eb74d962ff12010b2ef17?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dYYIX4WGfSgfOFN6QNmiKRxzepOGby0THzzMImmok7JV00tHsOkibXKi38ElbxTcsd-HRv41in0W8Nb144pr4FlRPJz0OwGve1ycwJIKV4VfHmLG3lFeD-OVv4wR02-jnHSsl-x~TZ3QlCsHg3KOJOrK3~ukULZLs6YWP8qRHRvqWS4DqfiY-qmgIA-fL5GRwki-yFP0ljNqc9sGbgKJt9wexsErOOTH3FxEgeA5fAOY-vFBO6Qaz91EwIUkVLSOpztUOrlypFm3bh0ZeM8oIVMSbBYdcgKRUnwoYbRcRjIKdR9qGB-KncmPAXMOlBnIzmEZG7AYxOZDOQvmhG48uA__"
-                  alt=""
+                 src="https://i.imgur.com/91Tt67E.jpeg"
+                 alt=""
                 />
               </div>
               <div className="pr-bott">
@@ -224,7 +223,7 @@ const Compney = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -11,8 +11,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Contact = () => {
   return (
+    <div id="contact">
+
     <div id='comp-oll' className='contact-whole-page-parent'>
-      <Nav/>
+      {/* <Nav/> */}
       <section id='contact-sec-ol'>
        <div className="cs-l">
         <div className="cs-l-t">
@@ -119,6 +121,7 @@ Submit
         {/* <div id="comp-1"></div> */}
       </section>
       <Footer/>
+    </div>
     </div>
   )
 }

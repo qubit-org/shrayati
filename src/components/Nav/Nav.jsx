@@ -8,7 +8,19 @@ export const Nav = () => {
         <img src="./imgs/prod/logo.png" alt="" />
       </div>
       <nav>
-        <Link to="/">
+        <a href="#app-ol">
+          <span>Home</span>
+        </a>
+        <a href="#about">
+          <span>About</span>
+        </a>
+        <a href="#info">
+          <span>Info</span>
+        </a>
+        <a href="#contact">
+          <span>Contact</span>
+        </a>
+        {/* <Link to="/">
           <span>Home</span>
         </Link>
         <Link to="/about">
@@ -19,7 +31,7 @@ export const Nav = () => {
         </Link>
         <Link to="/contact">
           <span>Contact</span>
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );
