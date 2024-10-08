@@ -592,7 +592,7 @@ nav a:hover span::after {
 
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications {
   display: flex;
-  gap: 10px;
+  gap: 25px;
   width: 100%;
   border-top: 1px solid #5553;
   margin-top: 12.5px;
@@ -601,7 +601,7 @@ nav a:hover span::after {
 }
 
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications div {
-  width: 90px;
+  width: fit-content;
   text-align: center;
   flex-shrink: 0;
 }
@@ -620,7 +620,12 @@ nav a:hover span::after {
   font-weight: 500;
 }
 
-.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2) {
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(1) a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(1) {
   background-color: #6dc415;
   color: #eee;
 }

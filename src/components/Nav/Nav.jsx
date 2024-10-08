@@ -14,6 +14,9 @@ export const Nav = () => {
         <a href="#about">
           <span>About</span>
         </a>
+        <a href="https://darkgray-donkey-340304.hostingersite.com/shop/"  target="_blank">
+          <span>Shop</span>
+        </a>
         <a href="#info">
           <span>Info</span>
         </a>

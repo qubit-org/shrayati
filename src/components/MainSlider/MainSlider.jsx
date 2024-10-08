@@ -9,12 +9,12 @@ const truncateText = (text, maxLength = 200) => {
 const ProductItem = React.memo(({ product }) => {
     return (
         <div className="item">
-            <img src={product.image} alt={product.topic} className='transparent-back' />
+            <img src={product.image} alt={product.topic}  loading="lazy" className='transparent-back' />
             <div className="introduce">
                 <div className="title">DESIGN SLIDER</div>
                 <div className="topic">{product.topic}</div>
                 <div className="des">{truncateText(product.introduction)}</div>
-                <button className="seeMore">SEE MORE</button>
+                <button className="seeMore">View Details</button>
             </div>
             <div className="detail">
                 <div className="title">{product.title}</div>
@@ -28,8 +28,12 @@ const ProductItem = React.memo(({ product }) => {
                     ))}
                 </div>
                 <div className="checkout">
-                    <button>ADD TO CART</button>
-                    <button>CHECKOUT</button>
+                    <button>
+                        <a href="https://darkgray-donkey-340304.hostingersite.com/shop/" target="_blank">
+                        Buy Now
+                        </a>
+                        </button>
+             
                 </div>
             </div>
         </div>
