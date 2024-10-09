@@ -28,6 +28,9 @@
 .s-menu>* {
     text-decoration: none;
 }
+#toggle-btn {
+    display: none;
+}
 
 @media (width < 600px) {
     header nav {
@@ -36,4 +39,7 @@
     #side-nav {
         display: flex;
     }
-}
+    #toggle-btn {
+        display: flex;
+    }
+    }
