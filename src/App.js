@@ -11,9 +11,13 @@ const AppWrapper = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowSplash(false);
-    }, 5000);
-    window.onload = function() {console.log("All content is loaded");}
-  }, []);
+    }, 6000);
+    const handleWindowLoad = () => {setShowSplash(false);};
+    window.addEventListener("load", handleWindowLoad);
+    return () => {
+      window.removeEventListener("load", handleWindowLoad);
+    };
+  },[]);
  
   return (
     <div id="App-Overlay">
