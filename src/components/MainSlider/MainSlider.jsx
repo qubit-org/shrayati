@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-// import './style.css'; // Ensure you have CSS for your slider styles
 
 const truncateText = (text, maxLength = 200) => {
     return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
@@ -40,22 +38,6 @@ const ProductItem = React.memo(({ product }) => {
     );
 });
 
-ProductItem.propTypes = {
-    product: PropTypes.shape({
-        image: PropTypes.string.isRequired,
-        topic: PropTypes.string.isRequired,
-        introduction: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        specifications: PropTypes.arrayOf(
-            PropTypes.shape({
-                label: PropTypes.string.isRequired,
-                value: PropTypes.string.isRequired,
-            })
-        ).isRequired,
-    }).isRequired,
-};
-
 const MainSlider = ({ products }) => {
     const nextButtonRef = useRef(null);
     const prevButtonRef = useRef(null);
@@ -86,7 +68,7 @@ const MainSlider = ({ products }) => {
             setTimeout(() => {
                 nextButton.style.pointerEvents = 'auto';
                 prevButton.style.pointerEvents = 'auto';
-            }, 1000);
+            }, 0);
         };
 
         const handleClickNext = () => showSlider('next');
@@ -129,22 +111,6 @@ const MainSlider = ({ products }) => {
     );
 };
 
-MainSlider.propTypes = {
-    products: PropTypes.arrayOf(
-        PropTypes.shape({
-            image: PropTypes.string.isRequired,
-            topic: PropTypes.string.isRequired,
-            introduction: PropTypes.string.isRequired,
-            title: PropTypes.string.isRequired,
-            description: PropTypes.string.isRequired,
-            specifications: PropTypes.arrayOf(
-                PropTypes.shape({
-                    label: PropTypes.string.isRequired,
-                    value: PropTypes.string.isRequired,
-                })
-            ).isRequired,
-        })
-    ).isRequired,
-};
+
 
 export default MainSlider;
