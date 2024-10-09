@@ -5,20 +5,24 @@ import About from "./pages/About/About";
 import Compney from "./pages/Compney/Compney";
 import Contact from "./pages/Contact/Contact";
 import Splash from "./components/Loader/Splash";
+import SideNav from "./components/Nav/SideNav";
 const AppWrapper = () => {
-  const [showSplash,setShowSplash]=useState(true);
-  useEffect(()=>{
+  const [showSplash, setShowSplash] = useState(true);
+  useEffect(() => {
     setTimeout(() => {
       setShowSplash(false);
     }, 5000);
-  },[])
-  return (<>
-    {showSplash && <Splash/>}
-    <Home />
-    <About />
-    <Compney />
-    <Contact />
-  </>);
+  }, []);
+  return (
+    <div id="App-Overlay">
+      {showSplash && <Splash />}
+      <Home />
+      <SideNav />
+      <About />
+      <Compney />
+      <Contact />
+    </div>
+  );
 };
 
 export default AppWrapper;

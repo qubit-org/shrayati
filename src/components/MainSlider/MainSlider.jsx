@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const truncateText = (text, maxLength = 200) => {
     return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
 };
@@ -103,9 +104,13 @@ const MainSlider = ({ products }) => {
                 ))}
             </div>
             <div className="arrows">
-                <button id="prev" ref={prevButtonRef}>&lt;</button>
+                <button id="prev" ref={prevButtonRef}>
+                    <KeyboardArrowLeftIcon/>
+                </button>
                 <button id="back" ref={backButtonRef}>See All</button>
-                <button id="next" ref={nextButtonRef}>&gt;</button>
+                <button id="next" ref={nextButtonRef}>
+                    <KeyboardArrowRightIcon/>
+                </button>
             </div>
         </div>
     );

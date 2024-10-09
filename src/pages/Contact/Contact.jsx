@@ -112,13 +112,7 @@ Submit
        </div>
        
        
-        {/* <div id="comp-1">
-            <h1>
-                Investors 
-                &nbsp; Relations
-            </h1>
-        </div> */}
-        {/* <div id="comp-1"></div> */}
+
       </section>
       <Footer/>
     </div>

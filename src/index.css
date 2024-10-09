@@ -722,8 +722,8 @@ body {
 }
 }
 
-@media screen and (max-width: 767px) {
-  /* mobile */
+@media (max-width:900px) {
+
   .carousel {
     height: 600px;
   }
@@ -767,7 +767,7 @@ body {
   width: 50px;
 }
 
-@media (width < 700px) {
+@media (width < 900px) {
   :root {
     --item1-transform: translateX(-100%) translateY(-5%) scale(1.7) !important;
     --item1-filter: blur(30px);
@@ -845,7 +845,7 @@ body {
   .introduce {
     position: relative;
     top: 70% !important;
-    width: 100% !important;
+    width: 90% !important;
     /* background: red; */
   }
 
@@ -894,7 +894,7 @@ body {
   .arrows {
     /* height: fit-content !important; */
     position: absolute !important;
-    bottom: 25px !important;
+    bottom: 0px !important;
     z-index: 111;
     width: 100vw !important;
     /* background: red; 
@@ -1095,7 +1095,8 @@ body {
   }
 
   .secc h1 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
+    text-decoration: none !important;
   }
 
   .secc p {
@@ -1103,6 +1104,8 @@ body {
     /* border: 5px solid red; */
     width: 100% !important;
     text-align: justify;
+    word-spacing: 0 !important;
+    letter-spacing: 0 !important;
   }
 
   .f-raw {
@@ -1116,5 +1119,10 @@ body {
 
   .cs-r {
     padding: 25px !important;
+  }
+}
+@media (height <700px) {
+  .carousel {
+    height: 90vh;
   }
 }
