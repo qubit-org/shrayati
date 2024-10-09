@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const truncateText = (text, maxLength = 200) => {
+const truncateText = (text, maxLength = 150) => {
     return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
 };
 const firstProducts = [{
@@ -157,14 +157,36 @@ const MainSlider = () => {
             setProducts([...items.slice(1,items.length),items[0]])
             setTimeout(() => {
                 carousel.classList.add('next');
-            }, 300)
+            }, 100)
         } else {
             setProducts([items[items.length-1],...items.slice(0,items.length-1)])
             setTimeout(() => {
                 carousel.classList.add('prev');
-            }, 300);
+            }, 100);
         }
     };
+    useEffect(()=>{
+        const seeMoreButtons = document.querySelectorAll('.seeMore');
+        const handleClickBack = ()=>{
+            carouselRef.current.classList.remove('showDetail');
+        }
+        const handleClickSeeMore= ()=>{
+            carouselRef.current.classList.add('showDetail');
+        }
+        seeMoreButtons.forEach((button) =>
+            button.addEventListener('click',handleClickSeeMore)
+        );
+        const backButton = backButtonRef.current;
+        backButton.addEventListener('click',handleClickBack );
+        return () => {
+            backButton.removeEventListener('click', handleClickBack);
+            seeMoreButtons.forEach((button) =>
+                button.removeEventListener('click', handleClickSeeMore)
+            );
+        };
+    },[])
+
+
     return (
         <div className="carousel" ref={carouselRef}>
             <div className="list" >

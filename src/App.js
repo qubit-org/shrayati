@@ -12,7 +12,9 @@ const AppWrapper = () => {
     setTimeout(() => {
       setShowSplash(false);
     }, 5000);
+    window.onload = function() {console.log("All content is loaded");}
   }, []);
+ 
   return (
     <div id="App-Overlay">
       {showSplash && <Splash />}
