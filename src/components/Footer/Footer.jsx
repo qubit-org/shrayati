@@ -45,38 +45,36 @@ const Footer = () => {
             <h1>
                 Links
             </h1>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
+            <a href="#app-ol">Home</a>
+            <a href="https://darkgray-donkey-340304.hostingersite.com/shop/">Products</a>
+            <a href="http://localhost:3000/#contact">Support</a>
         </div>
         <div className="lks-cont">
             <h1>
                 Shop
             </h1>
-            <a href="#">Paper Products</a>
-            <a href="#">Oral care</a>
-            <a href="#">Women's accessories</a>
-            <a href="#">Wooden Tableware</a>
-            <a href="#">Plant's fooda </a>
-            <a href="#"></a>
-        </div>
+            <a href="https://darkgray-donkey-340304.hostingersite.com/shop/?filter_cat=318">Paper Products</a>
+            <a href="https://darkgray-donkey-340304.hostingersite.com/shop/?filter_cat=326">Towels</a>
+            <a href="https://darkgray-donkey-340304.hostingersite.com/shop/?filter_cat=322">Plates</a>
+            <a href="https://darkgray-donkey-340304.hostingersite.com/shop/?filter_cat=325">Cutlery</a>
+</div>
         <div className="lks-cont">
             <h1>
                Legal
             </h1>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Return & Refund Policy</a>
+              <a href="https://darkgray-donkey-340304.hostingersite.com/terms-and-conditions/">Terms & Conditions</a>
+              <a href="https://darkgray-donkey-340304.hostingersite.com/privacy-policy/">Privacy Policy</a>
+              <a href="https://darkgray-donkey-340304.hostingersite.com/refund-and-returns-policy/">Return & Refund Policy</a>
         </div>
         <div className="lks-cont">
             <h1>
                 Company
             </h1>
-              <a href="#">About Us</a>
-              <a href="#">Newsletter</a>
-              <a href="#">Investor relations</a>
-              <a href="#">blogs</a>
-              <a href="#">contact us</a>
+              <a href="#about">About Us</a>
+              <a href="#comp-3">Newsletter</a>
+              <a href="#comp-4">blogs</a>
+              <a href="#comp-5">Investor relations</a>
+              <a href="#contact">contact us</a>
         </div>
       </div>
     </footer>

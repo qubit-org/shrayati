@@ -148,8 +148,8 @@ header {
   display: flex;
   justify-content: space-between;
   /* margin: auto; */
-  padding: 25px 5vw;
-  height: 100px;
+  padding: 15px 5vw;
+  height: 70px;
   align-items: center;
   width: 100% !important;
   position: relative;
@@ -764,7 +764,7 @@ body {
 }
 
 .logo>img {
-  width: 70px;
+  width: 50px;
 }
 
 @media (width < 700px) {
