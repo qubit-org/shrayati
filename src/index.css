@@ -1064,11 +1064,20 @@ body {
 }
 
 @media (width < 500px) {
+  #mainsliderset{
+    margin-top: -50px;
+  }
   .introduce .des {
     font-size: 1rem !important;
     width: 90vw;
   }
+    ::-webkit-scrollbar {
+      display: none;
+  }
 
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
   .introduce .topic,
   .detail .title {
     font-size: 2rem !important;

@@ -6,7 +6,7 @@ const truncateText = (text, maxLength = 150) => {
 };
 const firstProducts = [
   {
-    image: "./imgs/change/10.png",
+    image: "./imgs/change/10.webp",
     topic: "Tissue Napkin",
     introduction:
       "Our elegant tissue napkins are crafted from recycled paper, providing a sophisticated and eco-friendly option for any occasion. These napkins are designed with both style and functionality in mind, featuring a soft and absorbent texture that handles spills and messes with ease. The crisp white color enhances the visual appeal of your table setting, making these napkins suitable for both casual and formal events. Packaged in a set of 50, they offer practical coverage while supporting your commitment to reducing environmental impact.",
@@ -21,7 +21,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/1.png",
+    image: "./imgs/change/1.webp",
     topic: "Compartment Plates",
     introduction:
       "Our eco-friendly compartment plates are a sustainable choice for organizing and serving various dishes. Made from recycled paper, these plates are designed to offer convenience and versatility while minimizing environmental impact. The three compartments allow you to serve multiple types of food on one plate, keeping them separated and making your meals more enjoyable. Ideal for both casual and formal settings, these plates are perfect for picnics, parties, and everyday use. Not only do they provide practical benefits, but they also support your commitment to reducing waste and protecting the environment.",
@@ -37,7 +37,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/2.png",
+    image: "./imgs/change/2.webp",
     topic: "Cutlery Knife",
     introduction:
       "Experience the perfect blend of style and sustainability with our wooden cutlery knife. Crafted from responsibly sourced wood, this knife combines functionality with eco-conscious design. It features a sleek, smooth blade that is ideal for cutting through a variety of foods with ease. Whether you’re enjoying a casual meal at home or hosting a formal dinner, this knife adds a touch of elegance to your table setting while supporting a greener planet. Its durable construction ensures long-lasting use, making it a practical and stylish choice for any dining occasion.",
@@ -53,7 +53,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/3.png",
+    image: "./imgs/change/3.webp",
     topic: "Cutlery Fork",
     introduction:
       "Elevate your dining experience with our eco-friendly wooden fork. Designed with sustainability in mind, this fork is crafted from high-quality wood, offering a natural and stylish alternative to traditional cutlery. Its four prongs are expertly shaped to handle various types of food, from salads to main courses. The fork’s smooth finish and ergonomic design ensure comfort during use, making it a perfect choice for any meal. Ideal for both everyday dining and special occasions, this fork helps reduce plastic waste while adding a touch of sophistication to your table.",
@@ -69,7 +69,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/4.png",
+    image: "./imgs/change/4.webp",
     topic: "Cutlery Spoon",
     introduction:
       "Discover the perfect eco-friendly addition to your dining collection with our wooden cutlery spoon. Made from sustainable wood, this spoon offers a gentle touch while maintaining its durability. It is ideal for soups, stews, and other liquid-based dishes. The natural wood finish adds a touch of elegance to your table setting, while its design ensures comfort and ease of use. Suitable for both everyday meals and special occasions, this spoon supports your commitment to reducing plastic waste and promotes a more sustainable lifestyle.",
@@ -85,7 +85,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/5.png",
+    image: "./imgs/change/5.webp",
     topic: "Paper Tray",
     introduction:
       "Our biodegradable paper tray is designed to offer a sustainable solution for organizing and serving various items. The large size accommodates a substantial amount of food or goods, making it perfect for both personal and commercial use. Made from biodegradable paper, this tray is an environmentally responsible alternative to plastic or foam trays. Its sturdy construction ensures reliable performance, while its natural appearance complements any setting. Ideal for parties, events, or everyday use, this tray helps you reduce waste while maintaining functionality and style.",
@@ -101,7 +101,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/6.png",
+    image: "./imgs/change/6.webp",
     topic: "Paper Cups",
     introduction:
       "Enjoy beverages responsibly with our eco-friendly paper cups. Made from recycled paper, these cups provide a sustainable option for your drinking needs, whether you’re serving hot coffee or cold refreshments. Each cup is designed to be sturdy and leak-proof, ensuring your drinks stay contained while minimizing environmental impact. The cups are perfect for various occasions, from casual gatherings to formal events. With a pack of 50, you’ll have plenty of cups for any event, all while supporting a commitment to reducing plastic waste and protecting the environment.",
@@ -117,7 +117,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/7.png",
+    image: "./imgs/change/7.webp",
     topic: "Paper Plate",
     introduction:
       "Our biodegradable paper plates are the perfect choice for easy serving and cleanup. Designed with environmental responsibility in mind, these plates are made from biodegradable paper that breaks down naturally, reducing your ecological footprint. The 9-inch size is versatile enough for various types of meals, and the sturdy construction ensures the plates hold up well during use. Ideal for any occasion, from everyday meals to special events, these plates combine convenience with sustainability, helping you make eco-friendly choices without sacrificing quality or style.",
@@ -133,7 +133,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/8.png",
+    image: "./imgs/change/8.webp",
     topic: "Facial Tissue Brown",
     introduction:
       "Our brown facial tissues offer a soft and eco-friendly option for your daily needs. Made from recycled paper, these tissues provide a gentle touch while supporting environmental sustainability. The natural brown color adds a rustic charm to your tissue box, and the high absorbency ensures effective performance for various uses. Each pack contains 100 tissues, making it a practical choice for households or offices. By choosing these tissues, you are making a positive impact on the environment while enjoying the convenience and softness of recycled materials.",
@@ -148,7 +148,7 @@ const firstProducts = [
     ],
   },
   {
-    image: "./imgs/change/9.png",
+    image: "./imgs/change/9.webp",
     topic: "Facial Tissue Green",
     introduction:
       "Our green facial tissues are designed to offer both comfort and environmental responsibility. Crafted from recycled paper, these tissues are gentle on the skin while supporting sustainable practices. The fresh green color adds a touch of nature to your space, and the high-quality material ensures effective use for a variety of needs. Each pack contains 100 tissues, making it an ideal choice for homes or offices. By opting for these eco-friendly tissues, you’re choosing a product that prioritizes both personal comfort and environmental care.",
@@ -219,7 +219,7 @@ const MainSlider = ({ setImgLoading }) => {
   return (
     <div id="app-ol" className="home-page-oll">
       <Nav />
-      <div className="carousel" ref={carouselRef}>
+      <div className="carousel" id="mainsliderset" ref={carouselRef}>
         <div className="list">
           {products.map((product, index) => (
             <div className="item" key={index}>
