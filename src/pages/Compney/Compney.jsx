@@ -137,7 +137,7 @@ const Compney = () => {
         </div>
         <div id="comp-5" className="secc">
           <center>
-            <h1>Investor’s Contact</h1>
+            <h1> Testimonials </h1>
           </center>
           <div className="ic-grd">
             <div className="ic-cd">

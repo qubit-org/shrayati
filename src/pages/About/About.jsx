@@ -57,7 +57,7 @@ const About = () => {
         <div id="miss">
           <div className="ms-dt magicpattern">
             <div className="t-title">
-              Shrayati’s mission
+            Our Vision & Mission
             </div>
             <p>
               <b>Vision:</b> Be the market leader in providing eco-friendly products that promote sustainability and environmental responsibility, fostering a greener future for generations to come.

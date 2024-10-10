@@ -219,7 +219,7 @@ nav a:hover span::after {
 }
 .carousel {
   position: relative;
-  height: 100vh;
+  height: 100vh !important;
   overflow: hidden;
   margin-top: 0px;
   /* border: 5px solid rgb(108, 30, 177); */
@@ -241,6 +241,7 @@ nav a:hover span::after {
 .carousel .list .item {
   position: absolute;
   left: 0%;
+  top: 0;
   width: 80%;
   height: 100%;
   font-size: 15px;
@@ -587,7 +588,8 @@ nav a:hover span::after {
 .arrows {
   padding: 0 5vw;
   position: absolute;
-  bottom: 50px;
+  /* border: 5px solid red; */
+  bottom: 25px;
   /* width: 1140px; */
   /* max-width: 90%; */
   display: flex;
@@ -628,7 +630,7 @@ nav a:hover span::after {
 
 #back {
   font-family: Poppins;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   padding: 5px 17px;
   border-radius: 7px;
   border: none;
