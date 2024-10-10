@@ -35,13 +35,6 @@ const About = () => {
 
   return (
     <section id='about'>
-      {/* <Nav /> */}
-      {/* <main>
-        <div className="hero-tx">
-          <h1>ABOUT</h1>
-          <h1>SHRAYATI</h1>
-        </div>
-      </main> */}
       <div id="ab-2">
         <div className="ab-data">
           <div className="t-title">
@@ -52,6 +45,7 @@ const About = () => {
           </p>
         </div>
         <div className="chain">
+          <div id="overlay"></div>
           {renderSplineScene()}
         </div>
         <div id="miss">
