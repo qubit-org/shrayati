@@ -133,9 +133,9 @@ const Compney = () => {
               </div>
             </div>
           </div>
-          <div className="lrg-btn">Show All</div>
+          {/* <div className="lrg-btn">Show All</div> */}
         </div>
-        <div id="comp-5" className="secc">
+        {/* <div id="comp-5" className="secc">
           <center>
             <h1> Testimonials </h1>
           </center>
@@ -221,7 +221,7 @@ const Compney = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* <Footer /> */}
     </div>

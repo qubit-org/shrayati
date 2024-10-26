@@ -57,19 +57,27 @@ const Contact = () => {
               </h2>
             </div>
             <div className="cs-l-m">
-              <div className="ml-line">
+        
+           <a href={`tel:91574 91918`}>
+                 <div className="ml-line">
                 <span><PhoneIcon /></span>
                 <span>+91 9157491918</span>
               </div>
+            </a> 
+          <a href={`mailto:acc.shrayati@gmail.com`}>
               <div className="ml-line">
                 <span><MailIcon /></span>
                 <span>info@shrayati.com</span>
               </div>
-              <div className="ml-line">
+        </a>
+        
+           <a href="https://maps.app.goo.gl/8w8JQQSdcApkqS5c8" target="_blank">
+             <div className="ml-line">
                 <span><NearMeIcon /></span>
-                <span>Angle Bizz, 504, Khodal Chowk, Near Matuki Restaurant, Punit Nagar 80 ft. Main Road, Rajkot - 360004 (Guj) India.</span>
+                <span>
+                    Angle Bizz, 504, Khodal Chowk, Near Matuki Restaurant, Punit Nagar 80 ft. Main Road, Rajkot - 360004 (Guj) India.</span>
               </div>
-            </div>
+        </a>    </div>
             <div className="cs-l-b">
               <a href="https://www.instagram.com/shrayati_ecovation/" target='_blank' rel="noopener noreferrer"><InstagramIcon /></a>
               <a href="https://www.youtube.com/@shrayatiecovation2355" target='_blank' rel="noopener noreferrer"><YouTubeIcon /></a>

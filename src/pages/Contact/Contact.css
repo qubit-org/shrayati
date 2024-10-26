@@ -232,3 +232,13 @@ textarea {
         font-size: 0.9rem;
     }
     }
+.swal2-confirm,
+.swal2-styled {
+    background-color: #68D338 !important;
+}
+
+.cs-l-m a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}

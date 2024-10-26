@@ -114,3 +114,8 @@
         background-position: 10vw 12vh;
     }
 }
+        @media (width <600px) {
+            #feedRev h1 {
+                font-size: 1.25rem !important;
+            }
+        }
