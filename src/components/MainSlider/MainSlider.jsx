@@ -198,6 +198,7 @@ const MainSlider = ({ setImgLoading }) => {
   useEffect(() => {
     const seeMoreButtons = document.querySelectorAll(".seeMore");
     const handleClickBack = () => {
+      // console.log("clicked")
       carouselRef.current.classList.remove("showDetail");
     };
     const handleClickSeeMore = () => {
@@ -208,6 +209,7 @@ const MainSlider = ({ setImgLoading }) => {
     );
     const backButton = backButtonRef.current;
     backButton.addEventListener("click", handleClickBack);
+    
     return () => {
       backButton.removeEventListener("click", handleClickBack);
       seeMoreButtons.forEach((button) =>
@@ -215,6 +217,10 @@ const MainSlider = ({ setImgLoading }) => {
       );
     };
   }, []);
+  const handleClickBack = () => {
+      // console.log("clicked")
+      carouselRef.current.classList.remove("showDetail");
+    };
 
   return (
     <div id="app-ol" className="home-page-oll">
@@ -256,6 +262,9 @@ const MainSlider = ({ setImgLoading }) => {
                       Buy Now
                     </a>
                   </button>
+                    <button id="back" ref={backButtonRef} onClick={handleClickBack}>
+            See All
+          </button>
                 </div>
               </div>
             </div>
@@ -270,9 +279,9 @@ const MainSlider = ({ setImgLoading }) => {
           >
             &lt;
           </button>
-          <button id="back" ref={backButtonRef}>
+          {/* <button id="back" ref={backButtonRef}>
             See All
-          </button>
+          </button> */}
           <button
             id="next"
             onClick={() => {

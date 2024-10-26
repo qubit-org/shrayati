@@ -649,7 +649,7 @@ nav a:hover span::after {
   font-family: Poppins;
   /* margin-top: 25px; */
   padding: 5px 17px;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   border: none;
   border: 1px solid #555;
   background-color: transparent;
