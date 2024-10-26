@@ -38,7 +38,7 @@ const Compney = () => {
             </div>
           </center>
         </div>
-        <div id="comp-3" className="secc">
+        {/* <div id="comp-3" className="secc">
           <center>
             <h1>Financial Reports</h1>
             <div className="report-grd">
@@ -81,7 +81,7 @@ const Compney = () => {
               <div className="report-cd"></div>
             </div>
           </center>
-        </div>
+        </div> */}
         <div id="comp-4" className="secc">
           <center>
             <h1>Press Releases</h1>
