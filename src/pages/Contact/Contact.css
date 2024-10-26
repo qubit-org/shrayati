@@ -239,6 +239,6 @@ textarea {
 
 .cs-l-m a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
 }
