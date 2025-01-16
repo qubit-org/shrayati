@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marcellus&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --font1: 'Anton', sans-serif;
+  --font2: 'Michroma', sans-serif;
+  --font3: 'Poppins', sans-serif;
+  --font4: 'Prompt', sans-serif;
+  --font5: 'Russo One', sans-serif;
+  --font6: 'Saira', sans-serif;
+  --font7: 'Tilt Warp', cursive;
+  --font8: 'Kanit', sans-serif;
+  --font9: 'Marcellus', serif;
+  --blue: #2490EB;
+  --blue2: #07366A;
+  --blue3: #042242;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -632,7 +649,7 @@ nav a:hover span::after {
   font-family: Poppins;
   /* margin-top: 25px; */
   padding: 5px 17px;
-  border-radius: 7px;
+  /* border-radius: 7px; */
   border: none;
   border: 1px solid #555;
   background-color: transparent;

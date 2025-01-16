@@ -121,3 +121,8 @@ font-weight: 600;
 #comp-4{
     padding: 10vh 5vw;
 }
+.cc-ifo a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}

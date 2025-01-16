@@ -5,21 +5,23 @@ import Contact from "./pages/Contact/Contact";
 import Splash from "./components/Loader/Splash";
 import SideNav from "./components/Nav/SideNav";
 import MainSlider from "./components/MainSlider/MainSlider";
+import Testimonials from "./pages/About/Testimonials";
 const AppWrapper = () => {
   const [showSplash, setShowSplash] = useState(true);
   const [imgLoading, setImgLoading] = useState(true);
-  useEffect(()=>{
+  useEffect(() => {
     setTimeout(() => {
       setShowSplash(false);
     }, 3000);
-  },[])
+  }, []);
   return (
     <div id="App-Overlay">
-      {(showSplash || imgLoading) && <Splash />}  
+      {(showSplash || imgLoading) && <Splash />}
       <MainSlider setImgLoading={setImgLoading} />
       <SideNav />
       <About />
       <Compney />
+      <Testimonials />
       <Contact />
     </div>
   );
